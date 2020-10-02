@@ -1,6 +1,6 @@
 {
   "name": "@stefanprobst/next-markdown",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "src/index.js",
   "types": "src/index.d.ts",
   "repository": "git@github.com:stefanprobst/next-markdown.git",
@@ -16,7 +16,7 @@
     "lint:fix": "yarn lint --fix"
   },
   "dependencies": {
-    "@stefanprobst/markdown-loader": "^1.0.0"
+    "@stefanprobst/markdown-loader": "^1.0.1"
   },
   "devDependencies": {
     "@commitlint/cli": "^11.0.0",
