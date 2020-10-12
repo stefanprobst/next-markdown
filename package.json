@@ -1,6 +1,6 @@
 {
   "name": "@stefanprobst/next-markdown",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "main": "src/index.js",
   "types": "src/index.d.ts",
   "repository": "git@github.com:stefanprobst/next-markdown.git",
@@ -16,7 +16,7 @@
     "lint:fix": "yarn lint --fix"
   },
   "dependencies": {
-    "@stefanprobst/markdown-loader": "^1.0.5"
+    "@stefanprobst/markdown-loader": "^1.0.6"
   },
   "devDependencies": {
     "@commitlint/cli": "^11.0.0",
@@ -36,13 +36,13 @@
     "husky": "^4.3.0",
     "jest": "^26.4.2",
     "lint-staged": "^10.4.0",
-    "next": "^9.5.4",
+    "next": "^9.5.5",
     "prettier": "^2.1.2",
     "react": "^16.13.1",
     "typescript": "^4.0.3"
   },
   "peerDependencies": {
-    "next": "^9.5.4",
+    "next": "^9.5.5",
     "react": "^16.10.0"
   },
   "engines": {
