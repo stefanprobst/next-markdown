@@ -1498,19 +1498,21 @@
   resolved "https://registry.npmjs.org/@stefanprobst/eslint-config-node/-/eslint-config-node-1.0.5.tgz#4185e2b95c3c669da190f4e02233b2e45be89756"
   integrity sha512-tldJ3N+7JbwRap5XeSLDvOw73IL2vGKcUTfmt9MprZKtYRL0XyWiv1ixGi+jCAGjhIl8uqbba2mrE8SgbTGBew==
 
-"@stefanprobst/markdown-loader@^1.0.6":
-  version "1.0.6"
-  resolved "https://registry.npmjs.org/@stefanprobst/markdown-loader/-/markdown-loader-1.0.6.tgz#bf87bafda3566257184f524748477bae18299cb8"
-  integrity sha512-mW2QvGBNIsyjtpQuPKvTsu7V8qVLHqTIb6gar47C8Jvgrqwkfo3Yqadu4EJG3Gzz0FGkxwXCtoKnQ1PocKffAA==
+"@stefanprobst/markdown-loader@^1.0.7":
+  version "1.0.7"
+  resolved "https://registry.npmjs.org/@stefanprobst/markdown-loader/-/markdown-loader-1.0.7.tgz#add04a2d65efdb26b2f0ab896cd52514dfe2c251"
+  integrity sha512-TTYAjA1kJ77eHX/tN369mmcgjOcyyNEB3TfbrIssJektAzNKeg3chJPcsvkDEF+gzn9rTFFK1Cfyqf9iZWbyTg==
   dependencies:
     "@stefanprobst/remark-extract-yaml-frontmatter" "^1.0.0"
     loader-utils "^2.0.0"
-    rehype-raw "^4.0.2"
+    rehype-raw "^4.0.0"
     rehype-sanitize "^4.0.0"
     rehype-stringify "^8.0.0"
     remark-frontmatter "^2.0.0"
-    remark-parse "^8.0.3"
+    remark-parse "^8.0.0"
     remark-rehype "^7.0.0"
+    remark-stringify "^9.0.0"
+    strip-markdown "^4.0.0"
     unified "^9.2.0"
 
 "@stefanprobst/prettier-config@^1.0.0":
@@ -5871,6 +5873,11 @@ log-update@^4.0.0:
     slice-ansi "^4.0.0"
     wrap-ansi "^6.2.0"
 
+longest-streak@^2.0.0:
+  version "2.0.4"
+  resolved "https://registry.npmjs.org/longest-streak/-/longest-streak-2.0.4.tgz#b8599957da5b5dab64dee3fe316fa774597d90e4"
+  integrity sha512-vM6rUVCVUJJt33bnmHiZEvr7wPT78ztX7rojL+LW51bHtLh6HTjx84LA5W4+oa6aKEJA7jJu5LR6vQRBpA5DVg==
+
 loose-envify@^1.0.0, loose-envify@^1.1.0, loose-envify@^1.4.0:
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/loose-envify/-/loose-envify-1.4.0.tgz#71ee51fa7be4caec1a63839f7e682d8132d30caf"
@@ -5970,6 +5977,23 @@ mdast-util-to-hast@^9.1.0:
     unist-util-generated "^1.0.0"
     unist-util-position "^3.0.0"
     unist-util-visit "^2.0.0"
+
+mdast-util-to-markdown@^0.5.0:
+  version "0.5.3"
+  resolved "https://registry.npmjs.org/mdast-util-to-markdown/-/mdast-util-to-markdown-0.5.3.tgz#e05c54a3ccd239bab63c48a1e5b5747f0dcd5aca"
+  integrity sha512-sr8q7fQJ1xoCqZSXW6dO/MYu2Md+a4Hfk9uO+XHCfiBhVM0EgWtfAV7BuN+ff6otUeu2xDyt1o7vhZGwOG3+BA==
+  dependencies:
+    "@types/unist" "^2.0.0"
+    longest-streak "^2.0.0"
+    mdast-util-to-string "^1.0.0"
+    parse-entities "^2.0.0"
+    repeat-string "^1.0.0"
+    zwitch "^1.0.0"
+
+mdast-util-to-string@^1.0.0:
+  version "1.1.0"
+  resolved "https://registry.npmjs.org/mdast-util-to-string/-/mdast-util-to-string-1.1.0.tgz#27055500103f51637bd07d01da01eb1967a43527"
+  integrity sha512-jVU0Nr2B9X3MU4tSK7JP1CMkSvOj7X5l/GboG1tKRw52lLF1x2Ju92Ms9tNetCcbfX3hzlM73zYo2NKkWSfF/A==
 
 mdurl@^1.0.0:
   version "1.0.1"
@@ -7262,7 +7286,7 @@ regjsparser@^0.6.4:
   dependencies:
     jsesc "~0.5.0"
 
-rehype-raw@^4.0.2:
+rehype-raw@^4.0.0:
   version "4.0.2"
   resolved "https://registry.npmjs.org/rehype-raw/-/rehype-raw-4.0.2.tgz#5d3191689df96c8c651ce5f51a6c668d2c07b9c8"
   integrity sha512-xQt94oXfDaO7sK9mJBtsZXkjW/jm6kArCoYN+HqKZ51O19AFHlp3Xa5UfZZ2tJkbpAZzKtgVUYvnconk9IsFuA==
@@ -7290,7 +7314,7 @@ remark-frontmatter@^2.0.0:
   dependencies:
     fault "^1.0.1"
 
-remark-parse@^8.0.3:
+remark-parse@^8.0.0:
   version "8.0.3"
   resolved "https://registry.npmjs.org/remark-parse/-/remark-parse-8.0.3.tgz#9c62aa3b35b79a486454c690472906075f40c7e1"
   integrity sha512-E1K9+QLGgggHxCQtLt++uXltxEprmWzNfg+MxpfHsZlrddKzZ/hZyWHDbK3/Ap8HJQqYJRXP+jHczdL6q6i85Q==
@@ -7319,6 +7343,13 @@ remark-rehype@^7.0.0:
   dependencies:
     mdast-util-to-hast "^9.1.0"
 
+remark-stringify@^9.0.0:
+  version "9.0.0"
+  resolved "https://registry.npmjs.org/remark-stringify/-/remark-stringify-9.0.0.tgz#8ba0c9e4167c42733832215a81550489759e3793"
+  integrity sha512-8x29DpTbVzEc6Dwb90qhxCtbZ6hmj3BxWWDpMhA+1WM4dOEGH5U5/GFe3Be5Hns5MvPSFAr1e2KSVtKZkK5nUw==
+  dependencies:
+    mdast-util-to-markdown "^0.5.0"
+
 remove-trailing-separator@^1.0.1:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/remove-trailing-separator/-/remove-trailing-separator-1.1.0.tgz#c24bce2a283adad5bc3f58e0d48249b92379d8ef"
@@ -7329,7 +7360,7 @@ repeat-element@^1.1.2:
   resolved "https://registry.yarnpkg.com/repeat-element/-/repeat-element-1.1.3.tgz#782e0d825c0c5a3bb39731f84efee6b742e6b1ce"
   integrity sha512-ahGq0ZnV5m5XtZLMb+vP76kcAM5nkLqk0lpqAuojSKGgQtn4eRi4ZZGm2olo2zKFH+sMsWaqOCW1dqAnOru72g==
 
-repeat-string@^1.5.4, repeat-string@^1.6.1:
+repeat-string@^1.0.0, repeat-string@^1.5.4, repeat-string@^1.6.1:
   version "1.6.1"
   resolved "https://registry.yarnpkg.com/repeat-string/-/repeat-string-1.6.1.tgz#8dcae470e1c88abc2d600fff4a776286da75e637"
   integrity sha1-jcrkcOHIirwtYA//Sndihtp15jc=
@@ -8104,6 +8135,11 @@ strip-json-comments@^3.1.0, strip-json-comments@^3.1.1:
   version "3.1.1"
   resolved "https://registry.yarnpkg.com/strip-json-comments/-/strip-json-comments-3.1.1.tgz#31f1281b3832630434831c310c01cccda8cbe006"
   integrity sha512-6fPc+R4ihwqP6N/aIv2f1gMH8lOVtWQHoqC4yK6oSDVVocumAsfCqjkXnqiYMhmMwS/mEHLp7Vehlt3ql6lEig==
+
+strip-markdown@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.npmjs.org/strip-markdown/-/strip-markdown-4.0.0.tgz#1f48aeb5ce81b646487d9f8fbdc18f8bf1416ba2"
+  integrity sha512-jwoS5zwHNFjergQjg4RFzmdS4n5WOd5DXDIwRY0jye9ALYMscLWfwZVBMt4P/va5aRmm7Dlj6O4NjMuaD7609Q==
 
 style-loader@1.2.1:
   version "1.2.1"
