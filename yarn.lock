@@ -1498,10 +1498,10 @@
   resolved "https://registry.npmjs.org/@stefanprobst/eslint-config-node/-/eslint-config-node-1.0.5.tgz#4185e2b95c3c669da190f4e02233b2e45be89756"
   integrity sha512-tldJ3N+7JbwRap5XeSLDvOw73IL2vGKcUTfmt9MprZKtYRL0XyWiv1ixGi+jCAGjhIl8uqbba2mrE8SgbTGBew==
 
-"@stefanprobst/markdown-loader@^1.0.8":
-  version "1.0.8"
-  resolved "https://registry.npmjs.org/@stefanprobst/markdown-loader/-/markdown-loader-1.0.8.tgz#57dd4ddb4d6a458236ca2e41fd76ca2e462355a7"
-  integrity sha512-1i1oFVOlEwKcnEI3wqGt+UCnu9LOnYraTAZesDzWoow4e8nFQl9QjMcXaRJt1DxJK4vcSDiNU68PGGhiN7KjXA==
+"@stefanprobst/markdown-loader@^1.0.9":
+  version "1.0.9"
+  resolved "https://registry.npmjs.org/@stefanprobst/markdown-loader/-/markdown-loader-1.0.9.tgz#391988a302e76640f2a795cfab01e91764c7003f"
+  integrity sha512-f42drG9m3IufjAjbRXmCZDbkWuo0/a4uCR6c2qB59kqtpoFmbJBewvSQTQgVCC5OhJXCDBeFGAwVIEDwReBXtA==
   dependencies:
     "@stefanprobst/remark-extract-yaml-frontmatter" "^1.0.0"
     loader-utils "^2.0.0"
